@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nagashree Beauty Parlor | Rukmini - The Art of Beauty | Luxury Bridal & Aesthetic Studio</title>
+  <meta name="description" content="Welcome to Nagashree Beauty Parlor by Rukmini. Premier luxury bridal makeover studio, 24K gold facial rituals, couture hair styling, and personalized aesthetic transformations.">
+  <meta name="keywords" content="Nagashree Beauty Parlor, Rukmini The Art of Beauty, bridal makeover, bridal makeup artist, gold facial, hair styling, luxury salon, Karnataka bridal salon">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Nagashree Beauty Parlor | Rukmini - The Art of Beauty">
+  <meta property="og:description" content="Experience royal bridal transformations, 24K gold skin therapies, and couture styling in an ultra-luxurious sanctuary.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon using Logo -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       GLOBAL ANIMATED LUXURY BACKGROUND (3D Golden Particle Canvas & Glowing Orbs)
+       ========================================================================== -->
+  <div class="global-animated-bg" aria-hidden="true">
+    <canvas id="hero3dCanvas"></canvas>
+    <div class="global-glow-orb global-glow-1"></div>
+    <div class="global-glow-orb global-glow-2"></div>
+    <div class="global-glow-orb global-glow-3"></div>
+  </div>
+
+  <!-- ==========================================================================
+       TOP NOTIFICATION BAR
+       ========================================================================== -->
+  <aside class="top-bar" aria-label="Announcement">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="badge-live"><span class="pulse-dot"></span> Bridal Bookings Open 2026-2027</span>
+        <span>✨ Exclusive Pre-Bridal Consultation & Complimentary Skin Analysis</span>
+      </div>
+      <div class="top-bar-right">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Mon - Sun: 9:30 AM – 8:30 PM</span>
+        <a href="tel:+918722332337"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg> Concierge: +91 87223 32337</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       STICKY LUXURY NAVIGATION HEADER
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <!-- Brand Logo & Identity -->
+      <a href="#hero" class="brand-link" aria-label="Nagashree Beauty Parlor Homepage">
+        <img src="assets/logo.png" alt="Nagashree Beauty Parlor - Rukmini" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#transformation" class="nav-link">Transformations</a></li>
+          <li><a href="#about" class="nav-link">About Artists</a></li>
+          <li><a href="#lookbook" class="nav-link">Lookbook</a></li>
+          <li><a href="#packages" class="nav-link">VIP Packages</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Visit Studio</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="#booking" class="btn btn-gold gold-shimmer nav-cta-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+          </svg>
+          <span class="nav-cta-text">Book VIP<span class="nav-cta-extra"> Experience</span></span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION WITH REAL-TIME 3D CANVAS & INTERACTIVE STAGE
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: High-Impact Typography & CTAs -->
+          <div class="hero-content">
+            <div class="hero-badge-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--gold-primary)">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <span>The Royal Sanctuary of Bridal Artistry</span>
+            </div>
+
+            <h1 class="hero-title">
+              Where Your Natural Radiance Transcends Into <em class="text-gold-gradient">Couture Art.</em>
+            </h1>
+
+            <!-- Mobile-Exclusive Glamour Showcase Card (First-screen Visual Impact) -->
+            <div class="hero-mobile-visual">
+              <div class="hero-mobile-img-card">
+                <img src="assets/bridal.jpg" alt="Signature Royal Bridal Makeover by Rukmini" class="hero-mobile-img">
+                <div class="hero-mobile-img-overlay"></div>
+                <div class="hero-mobile-badge-top">
+                  <span class="hero-mobile-badge-dot"></span>
+                  <span>Master Rukmini • Signature Bridal</span>
+                </div>
+                <div class="hero-mobile-glass-footer">
+                  <div>
+                    <div class="hero-mobile-footer-title">Royal Muhurtham Glow</div>
+                    <div class="hero-mobile-footer-rating">
+                      <span class="stars-gold">★★★★★</span> 4.9 (1,000+ Brides)
+                    </div>
+                  </div>
+                  <a href="#booking" class="hero-mobile-book-pill">Book Look →</a>
+                </div>
+              </div>
+            </div>
+
+            <p class="hero-lead">
+              Founded by master aesthetic artist <strong>Rukmini</strong> — 22+ years sculpting bespoke Indian bridal royalty, 24K gold skin rituals & couture hair in an opulent private sanctuary.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#booking" class="btn btn-gold gold-shimmer hero-primary-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                </svg>
+                <span>Reserve Bridal Date</span>
+              </a>
+
+            </div>
+
+            <!-- Opulent Glassmorphism Stats Cards -->
+            <div class="hero-stats-row">
+              <div class="hero-stat-card">
+                <span class="hero-stat-icon">👑</span>
+                <span class="hero-stat-number text-gold-gradient">22+</span>
+                <span class="hero-stat-label">Years Mastery</span>
+              </div>
+              <div class="hero-stat-card">
+                <span class="hero-stat-icon">✨</span>
+                <span class="hero-stat-number text-gold-gradient">1,000+</span>
+                <span class="hero-stat-label">Royal Brides</span>
+              </div>
+              <div class="hero-stat-card">
+                <span class="hero-stat-icon">⭐</span>
+                <span class="hero-stat-number text-gold-gradient">4.9/5</span>
+                <span class="hero-stat-label">Client Rating</span>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- Right Column: 3D Interactive Card Showcase (Desktop View) -->
+          <div class="hero-visual-wrapper desktop-hero-visual">
+            <div class="hero-3d-card">
+              <img src="assets/hero_salon.jpg" alt="Nagashree Beauty Parlor Luxury Interior" class="hero-card-img">
+
+              <!-- Floating Glassmorphic VIP Badge -->
+              <div class="hero-floating-glass-card">
+                <div class="hero-floating-badge">
+                  <div class="hero-floating-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="hero-floating-badge-title">VIP Private Bridal Suite</div>
+                    <div class="hero-floating-badge-sub">One-on-One Dedicated Artistry by Rukmini</div>
+                  </div>
+                </div>
+                <a href="#booking" class="btn btn-icon btn-gold" aria-label="Book private suite">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Crest Seal with Logo Emblem -->
+              <div class="hero-corner-crest" title="Nagashree Emblem">
+                <img src="assets/logo.png" alt="Nagashree Crest">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================================================
+             CONTINUOUS MOVING BEAUTY MATERIALS & TOOLS CAROUSEL (INFINITE ROUND-AND-ROUND)
+             ========================================================================== -->
+        <div class="hero-tools-marquee-wrapper">
+          <div class="tools-marquee-header">
+            <div class="tools-header-left">
+              <span class="tools-header-sparkle">✨</span>
+              <span class="tools-header-text">Artisan Beauty & Hair Materials We Use</span>
+            </div>
+            <span class="tools-header-badge">100% Professional Salon Grade</span>
+          </div>
+
+          <!-- Seamless Visual Tools Film Strip (Moving Round and Round) -->
+          <div class="tools-banner-carousel" aria-label="Professional Beauty and Hair Tools">
+            <div class="tools-banner-track">
+              <div class="tools-banner-slide"><img src="assets/beauty_tools.jpg" alt="Professional Beauty and Styling Tools" class="tools-banner-img"></div>
+              <div class="tools-banner-slide"><img src="assets/beauty_tools.jpg" alt="Professional Beauty and Styling Tools" class="tools-banner-img"></div>
+              <div class="tools-banner-slide"><img src="assets/beauty_tools.jpg" alt="Professional Beauty and Styling Tools" class="tools-banner-img"></div>
+              <div class="tools-banner-slide"><img src="assets/beauty_tools.jpg" alt="Professional Beauty and Styling Tools" class="tools-banner-img"></div>
+            </div>
+          </div>
+
+          <!-- Infinite Scrolling Materials Badges Ticker -->
+          <div class="tools-chips-marquee">
+            <div class="tools-chips-track">
+              <!-- Set 1 -->
+              <div class="tool-material-chip">
+                <span class="chip-icon">✂️</span>
+                <span class="chip-title">Gold Japanese Shears</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Precision Hair Architecture</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">🌟</span>
+                <span class="chip-title">24K Gold Thermal Barrel</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Hollywood Waves & Sangeet Curls</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">🎨</span>
+                <span class="chip-title">4K HD Airbrush System</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">24-Hr Waterproof Bridal Finish</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">👑</span>
+                <span class="chip-title">24K Pure Gold Leaf</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Imperial Cellular Radiance</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">💎</span>
+                <span class="chip-title">Nano-Titanium Silk Iron</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Keratin Glass Hair Gloss</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">💄</span>
+                <span class="chip-title">Prestige Luxury Cosmetics</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">MAC • Charlotte Tilbury • Dior</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">💨</span>
+                <span class="chip-title">Pro Ionic Tourmaline Dryers</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Zero-Frizz Volume & Shine</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">🌿</span>
+                <span class="chip-title">Rose Quartz & Jade Rollers</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Lymphatic Facial Sculpting</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">💧</span>
+                <span class="chip-title">Vortex Hydrafacial Wand</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Deep Pore Collagen Prep</span>
+              </div>
+
+              <!-- Duplicate Set for Seamless Infinite Loop -->
+              <div class="tool-material-chip">
+                <span class="chip-icon">✂️</span>
+                <span class="chip-title">Gold Japanese Shears</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Precision Hair Architecture</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">🌟</span>
+                <span class="chip-title">24K Gold Thermal Barrel</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Hollywood Waves & Sangeet Curls</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">🎨</span>
+                <span class="chip-title">4K HD Airbrush System</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">24-Hr Waterproof Bridal Finish</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">👑</span>
+                <span class="chip-title">24K Pure Gold Leaf</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Imperial Cellular Radiance</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">💎</span>
+                <span class="chip-title">Nano-Titanium Silk Iron</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Keratin Glass Hair Gloss</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">💄</span>
+                <span class="chip-title">Prestige Luxury Cosmetics</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">MAC • Charlotte Tilbury • Dior</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">💨</span>
+                <span class="chip-title">Pro Ionic Tourmaline Dryers</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Zero-Frizz Volume & Shine</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">🌿</span>
+                <span class="chip-title">Rose Quartz & Jade Rollers</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Lymphatic Facial Sculpting</span>
+              </div>
+              <div class="tool-material-chip">
+                <span class="chip-icon">💧</span>
+                <span class="chip-title">Vortex Hydrafacial Wand</span>
+                <span class="chip-dot">•</span>
+                <span class="chip-detail">Deep Pore Collagen Prep</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SIGNATURE SERVICES (FILTER TABS & 3D INTERACTIVE CARDS)
+         ========================================================================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            Curated Beauty Rituals
+          </div>
+          <h2 class="section-title">The Master <span class="text-gold-gradient">Service Collection</span></h2>
+          <p class="section-desc">Each treatment is orchestrated with internationally revered skincare formulations, bespoke techniques, and individualized consultation.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="services-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Experiences</button>
+          <button class="filter-btn" data-filter="bridal">Royal Bridal</button>
+          <button class="filter-btn" data-filter="skin">24K Gold & Skin Rituals</button>
+          <button class="filter-btn" data-filter="hair">Hair Couture</button>
+        </div>
+
+        <!-- Services 3D Grid -->
+        <div class="services-grid" id="servicesGrid">
+          <!-- Service 1: Bridal Makeover -->
+          <article class="service-card" data-category="bridal">
+            <div class="service-card-media">
+              <img src="assets/bridal.jpg" alt="Bridal Couture Makeover">
+              <span class="service-card-tag">Signature Bridal</span>
+            </div>
+            <div class="service-card-content">
+              <div class="service-meta-row">
+                <span class="service-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  3.5 Hours
+                </span>
+                <span class="service-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  Master Rukmini Led
+                </span>
+              </div>
+              <h3 class="service-card-title">Muhurtham & Reception Royal Makeover</h3>
+              <p class="service-card-desc">High-Definition waterproof airbrush makeup sculpted to complement heirloom South Indian silks, temple jewelry, and stage lighting with 24-hour stay.</p>
+              <ul class="service-perks-list">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Includes pre-makeup 24K collagen skin glow prep</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Saree draping & antique floral hair braiding</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Premium lashes & complementary touch-up kit</li>
+              </ul>
+              <div class="service-card-footer">
+                <a href="#booking" class="btn btn-outline-gold" style="width: 100%;">Reserve Bridal Date</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 2: 24K Gold Facial -->
+          <article class="service-card" data-category="skin">
+            <div class="service-card-media">
+              <img src="assets/skincare.jpg" alt="24K Gold Leaf Facial">
+              <span class="service-card-tag">Cellular Hydration</span>
+            </div>
+            <div class="service-card-content">
+              <div class="service-meta-row">
+                <span class="service-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  90 Mins
+                </span>
+                <span class="service-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  Instant Glass Skin
+                </span>
+              </div>
+              <h3 class="service-card-title">Imperial 24K Gold & Hydrafacial Infusion</h3>
+              <p class="service-card-desc">Advanced hydro-dermabrasion paired with genuine 24-karat gold leaf lymphatic drainage massage, stimulating collagen synthesis and porcelain glass luminosity.</p>
+              <ul class="service-perks-list">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Deep ultrasonic pore decongestion & AHA peel</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 24K gold foil sheets & botanical youth nectar</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Cryo-firming wand & collagen LED infusion</li>
+              </ul>
+              <div class="service-card-footer">
+                <a href="#booking" class="btn btn-outline-gold" style="width: 100%;">Book Facial Ritual</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 3: Hair Couture -->
+          <article class="service-card" data-category="hair">
+            <div class="service-card-media">
+              <img src="assets/hair.jpg" alt="Hair Couture Balayage & Keratin">
+              <span class="service-card-tag">Hair Alchemy</span>
+            </div>
+            <div class="service-card-content">
+              <div class="service-meta-row">
+                <span class="service-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  2.5 Hours
+                </span>
+                <span class="service-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  Zero Frizz Gloss
+                </span>
+              </div>
+              <h3 class="service-card-title">Keratin Silk Infusion & Caramel Balayage</h3>
+              <p class="service-card-desc">Transformative hair rejuvenation with high-protein keratin nano-molecules, bespoke caramel highlights, and nourishing scalp botanical elixirs.</p>
+              <ul class="service-perks-list">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Formaldehyde-free botanical keratin sealing</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Dimensional hand-painted Balayage toning</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Steam ozone therapy for root vitality</li>
+              </ul>
+              <div class="service-card-footer">
+                <a href="#booking" class="btn btn-outline-gold" style="width: 100%;">Book Hair Session</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ==========================================================================
+         INTERACTIVE BEFORE & AFTER TRANSFORMATION SLIDER
+         ========================================================================== -->
+    <section class="transformation-section" id="transformation">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Transformative Artistry
+          </div>
+          <h2 class="section-title">The Nagashree <span class="text-gold-gradient">Glow Metamorphosis</span></h2>
+          <p class="section-desc">Drag the interactive slider below to witness how our bespoke skin balancing, airbrush sculpting, and hair design bring out your ultimate bridal radiance.</p>
+        </div>
+
+        <div class="ba-slider-container">
+          <!-- Background: After Image -->
+          <div class="ba-img-layer ba-after-layer">
+            <img src="assets/bridal.jpg" alt="After Bridal Makeover Transformation">
+            <span class="ba-badge ba-badge-after">After: Royal Bridal Glow</span>
+          </div>
+
+          <!-- Foreground: Before Image (clipped) -->
+          <div class="ba-img-layer ba-before-layer">
+            <img src="assets/before.jpeg" alt="Before Bridal Makeover">
+            <span class="ba-badge ba-badge-before">Before: Pre-Event Skin Prep</span>
+          </div>
+
+          <!-- Interactive Handle -->
+          <div class="ba-handle" title="Drag to compare">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+              <path d="M15.41 16.59L10.83 12 15.41 7.41 14 6l-6 6 6 6 1.41-1.41z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         THE ART OF BEAUTY (RUKMINI'S PHILOSOPHY & STORY)
+         ========================================================================== -->
+    <section class="signature-story-section" id="story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image-stack">
+            <img src="assets/hero_salon.jpg" alt="Rukmini's Nagashree Studio" class="story-main-img">
+            <div class="story-floating-quote">
+              <p>“True beauty does not mask who you are; it illuminates the majestic queen within you.”</p>
+              <span>— Rukmini, Founder & Lead Artist</span>
+            </div>
+          </div>
+
+          <div class="story-content">
+            <div class="section-tag">Rukmini – The Art of Beauty</div>
+            <h2>An Uncompromising Passion for <span class="text-gold-gradient">Timeless Perfection</span></h2>
+            <p>
+              With over 22 years of experience in luxury bridal styling and aesthetic medicine rituals, Rukmini founded <strong>Nagashree Beauty Parlor</strong> with a single mission: to create a private haven where every woman is treated like royalty.
+            </p>
+            <p>
+              From custom-matching undertones to harmonizing your bridal look with your traditional South Indian kanjeevaram weaves, every stroke is intentional, delicate, and enduring.
+            </p>
+
+            <div class="story-features-grid">
+              <div class="story-feat-item">
+                <div class="story-feat-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div class="story-feat-text">
+                  <h4>100% Prestige Formulations</h4>
+                  <p>MAC, Charlotte Tilbury, Estée Lauder, Kérastase & Dermalogica products only.</p>
+                </div>
+              </div>
+
+              <div class="story-feat-item">
+                <div class="story-feat-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                </div>
+                <div class="story-feat-text">
+                  <h4>Surgical Grade Hygiene</h4>
+                  <p>UV-sterilized brushes, single-use applicators, and sanitized private suites.</p>
+                </div>
+              </div>
+
+              <div class="story-feat-item">
+                <div class="story-feat-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                </div>
+                <div class="story-feat-text">
+                  <h4>Punctual On-Time Assurance</h4>
+                  <p>Stress-free bridal schedule so you walk to your mandap calm, poised, and radiant.</p>
+                </div>
+              </div>
+
+              <div class="story-feat-item">
+                <div class="story-feat-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                </div>
+                <div class="story-feat-text">
+                  <h4>Comfort & Hospitality</h4>
+                  <p>Herbal welcome elixirs, calm acoustic lounge music, and attentive personal care.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT OUR ARTISTS (RUKMINI & RASHMI)
+         ========================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            Master Artistry & Team
+          </div>
+          <h2 class="section-title">Meet Our <span class="text-gold-gradient">Master Artists</span></h2>
+          <p class="section-desc">Entrust your celebration to dedicated bridal artisans who combine decades of royal heritage expertise with certified contemporary precision.</p>
+        </div>
+
+        <div class="artists-showcase-grid">
+          <!-- Artist 1: Rukmini -->
+          <article class="artist-card">
+            <div class="artist-card-header">
+              <img src="assets/rukmini.jpg" alt="Rukmini - Senior Artist & Founder" class="artist-card-img">
+              <span class="artist-role-badge">Senior Artist & Founder</span>
+              <span class="artist-exp-badge">22+ Years Experience</span>
+            </div>
+            <div class="artist-card-body">
+              <h3 class="artist-name">Rukmini</h3>
+              <div class="artist-title-sub">Founder & Lead Aesthetic Director</div>
+              <p class="artist-bio">
+                With over 22 years of celebrated mastery in royal South Indian bridal styling, HD airbrush techniques, and rejuvenating 24K gold skin therapies. Rukmini has sculpted timeless elegance for over 1,000+ brides, ensuring unmatched poise and lasting radiance.
+              </p>
+              <ul class="artist-highlights">
+                <li>👑 22+ Years Experience</li>
+                <li>✨ South Indian Muhurtham Specialist</li>
+                <li>💎 4K Airbrush Artistry</li>
+                <li>🌿 24K Gold Skin Therapies</li>
+              </ul>
+              <div class="artist-actions-row">
+                <a href="#booking" class="btn btn-gold gold-shimmer btn-select-artist" data-artist="rukmini">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                  <span>Book with Rukmini</span>
+                </a>
+                <a href="https://wa.me/918722332337?text=Hello%20Rukmini%20Ma'am,%20I%20would%20like%20to%20consult%20regarding%20bridal%20makeover" target="_blank" rel="noopener" class="btn btn-outline-gold btn-contact-artist">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.34 5L2 22l5.22-1.31C8.61 21.49 10.26 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                  <span>Contact</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artist 2: Rashmi -->
+          <article class="artist-card">
+            <div class="artist-card-header">
+              <img src="assets/rashmi.jpg" alt="Rashmi - Junior Certified Artist" class="artist-card-img">
+              <span class="artist-role-badge">Junior Artist</span>
+              <span class="artist-exp-badge">Certified Artist • 2 Years Exp</span>
+            </div>
+            <div class="artist-card-body">
+              <h3 class="artist-name">Rashmi</h3>
+              <div class="artist-title-sub">Certified Makeup & Hair Stylist</div>
+              <p class="artist-bio">
+                A formally certified beauty and makeup artist with 2 years of dedicated professional salon experience. Rashmi excels in youthful glass skin prep, trendy sangeet glamour, soft romantic bridesmaid looks, and contemporary floral hair design.
+              </p>
+              <ul class="artist-highlights">
+                <li>🎓 Certified Artist</li>
+                <li>✨ 2 Years Experience</li>
+                <li>💄 Sangeet & Reception Glam</li>
+                <li>🌸 Contemporary Braiding</li>
+              </ul>
+              <div class="artist-actions-row">
+                <a href="#booking" class="btn btn-gold gold-shimmer btn-select-artist" data-artist="rashmi">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                  <span>Book with Rashmi</span>
+                </a>
+                <a href="https://wa.me/918722332337?text=Hello%20Rashmi,%20I%20would%20like%20to%20consult%20regarding%20styling%20appointment" target="_blank" rel="noopener" class="btn btn-outline-gold btn-contact-artist">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.34 5L2 22l5.22-1.31C8.61 21.49 10.26 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                  <span>Contact</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CURATED BRIDAL LOOKBOOK & GALLERY
+         ========================================================================== -->
+    <section class="gallery-section" id="lookbook">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Haute Portfolio</div>
+          <h2 class="section-title">The Nagashree <span class="text-gold-gradient">Bridal Lookbook</span></h2>
+          <p class="section-desc">Click any image to inspect high-definition details of our bridal craftsmanship, hair architecture, and radiant finishes.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/bridal.jpg" alt="Maharani Bridal Makeover">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-tag">Royal Muhurtham</span>
+              <h3 class="gallery-overlay-title">Maharani Gold & Velvet Red Glow</h3>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/hair.jpg" alt="Caramel Balayage & Hollywood Waves">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-tag">Hair Couture</span>
+              <h3 class="gallery-overlay-title">Gloss Silk Waves & Honey Highlights</h3>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/skincare.jpg" alt="24K Gold Facial Treatment">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-tag">Skin Ritual</span>
+              <h3 class="gallery-overlay-title">24K Gold Droplets & Hydrafacial Dew</h3>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/before.jpeg" alt="Pre-Event Artistry & Skin Prep">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-tag">Glow Metamorphosis</span>
+              <h3 class="gallery-overlay-title">Pre-Event Artistry & Skin Prep</h3>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/hero_salon.jpg" alt="Nagashree Parlor Ambience">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-tag">Sanctuary</span>
+              <h3 class="gallery-overlay-title">Private VIP Styling Chambers</h3>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/bridal.jpg" alt="Delicate Eye Sculpting">
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-tag">Bridal Detail</span>
+              <h3 class="gallery-overlay-title">Winged Kohl & Antique Maang Tikka</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VIP BRIDAL PACKAGES & PRICING
+         ========================================================================== -->
+    <section class="packages-section" id="packages">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            Transparent Luxury
+          </div>
+          <h2 class="section-title">Exclusive <span class="text-gold-gradient">Bridal Packages</span></h2>
+          <p class="section-desc">Tailored multi-service pre-bridal and wedding day suites curated for brides who demand perfection on every occasion.</p>
+        </div>
+
+        <div class="packages-grid">
+          <!-- Package 1 -->
+          <div class="package-card">
+            <h3 class="package-name">Classic Grace</h3>
+            <p class="package-subtitle">Ideal for Engagement, Sangeet or Reception</p>
+            <div class="package-price" style="margin-bottom: 24px;">
+              <span class="badge-curated" style="display:inline-block;padding:8px 18px;border-radius:var(--radius-pill);background:var(--gold-lighter);border:1px solid var(--gold-border);color:var(--espresso-rich);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">Curated Celebration Suite</span>
+            </div>
+            <ul class="package-features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> HD Long-Wear Waterproof Makeover</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Contemporary Hair Styling & Hair Extension prep</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Saree or Lehenga Draping Mastery</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Premium 3D Silk Lashes</li>
+            </ul>
+            <a href="#booking" class="btn btn-outline-gold" style="width: 100%;">Reserve Classic</a>
+          </div>
+
+          <!-- Package 2: Featured -->
+          <div class="package-card featured">
+            <div class="package-crown-badge">👑 Most Popular for Brides</div>
+            <h3 class="package-name">Royal Maharani</h3>
+            <p class="package-subtitle">Complete Wedding Day & Muhurtham Elegance</p>
+            <div class="package-price" style="margin-bottom: 24px;">
+              <span class="badge-curated" style="display:inline-block;padding:8px 18px;border-radius:var(--radius-pill);background:var(--gold-lighter);border:1.5px solid var(--gold-primary);color:var(--espresso-rich);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">Signature Master Suite</span>
+            </div>
+            <ul class="package-features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Full 4K Airbrush Bridal Makeup by Rukmini</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Traditional Floral Poola Jada or Braided Architecture</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Pre-Makeup 24K Gold Hydra Glow Infusion</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Silk Saree Box Pleating & Jewelry Anchoring</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Complimentary Groom Touch-up Session</li>
+            </ul>
+            <a href="#booking" class="btn btn-gold gold-shimmer" style="width: 100%;">Select Royal Maharani</a>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="package-card">
+            <h3 class="package-name">Celestial Bride</h3>
+            <p class="package-subtitle">Full Pre-Bridal (1 Month) + Wedding Day VIP Suite</p>
+            <div class="package-price" style="margin-bottom: 24px;">
+              <span class="badge-curated" style="display:inline-block;padding:8px 18px;border-radius:var(--radius-pill);background:var(--gold-lighter);border:1px solid var(--gold-border);color:var(--espresso-rich);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">VIP All-Inclusive Concierge</span>
+            </div>
+            <ul class="package-features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 3 Custom Pre-Bridal Sessions (Gold Facials, Body Polish)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Keratin Hair Therapy & Color Consultation</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Muhurtham + Evening Reception Dual Look Makeover</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Antique Saree Box Pleating & Pre-Event Trial</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Priority VIP Private Chamber with Personal Assistant</li>
+            </ul>
+            <a href="#booking" class="btn btn-outline-gold" style="width: 100%;">Book Celestial Suite</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TESTIMONIALS & BRIDE LOVE
+         ========================================================================== -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Client Chronicles</div>
+          <h2 class="section-title">Beloved by <span class="text-gold-gradient">Over 1,000+ Happy Clients</span></h2>
+          <p class="section-desc">Authentic experiences and 99% client satisfaction from patrons who trusted Rukmini and the Nagashree team for their milestone celebrations.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">“Rukmini ma'am made me look like an ethereal dream! My wedding makeup did not budge through 8 hours of rituals, heavy tears, and stage lights. Everyone kept complimenting my glowing skin.”</p>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">SP</div>
+              <div>
+                <div class="reviewer-name">Sneha Prathap</div>
+                <div class="reviewer-role">Royal Bride 2026 • Bangalore</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">“The 24K Gold Hydrafacial here is truly in a league of its own. My skin felt plump, velvety, and glass-like for weeks. The salon is pristine, calm, and feels like a 7-star luxury spa.”</p>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">AK</div>
+              <div>
+                <div class="reviewer-name">Ananya Kulkarni</div>
+                <div class="reviewer-role">Skin Ritual Patron</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">“From saree draping to the intricate floral jada, the artistry was world-class. Rukmini understands traditional aesthetics better than anyone. Highly recommend the Royal Maharani package!”</p>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">DR</div>
+              <div>
+                <div class="reviewer-name">Deepika Rao</div>
+                <div class="reviewer-role">Muhurtham Bride</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE APPOINTMENT & DIRECT WHATSAPP CONCIERGE
+         ========================================================================== -->
+    <section class="booking-section" id="booking">
+      <div class="container">
+        <div class="booking-card-wrapper">
+          <!-- Left: Form -->
+          <div class="booking-form-side">
+            <div class="section-tag">Direct Studio Concierge</div>
+            <h3>Book Your VIP Appointment</h3>
+            <p>Select your ritual below to check live pricing and confirm instantly via WhatsApp concierge.</p>
+
+            <form id="bookingForm">
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="bookingName" class="form-label">Full Name *</label>
+                  <input type="text" id="bookingName" class="form-input" placeholder="e.g. Priyadarshini Rao" required>
+                </div>
+                <div class="form-group">
+                  <label for="bookingPhone" class="form-label">WhatsApp Number *</label>
+                  <input type="tel" id="bookingPhone" class="form-input" placeholder="+91 87223 XXXXX" required>
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="bookingService" class="form-label">Desired Service *</label>
+                  <select id="bookingService" class="form-select">
+                    <option value="bridal">Royal Bridal & Muhurtham Glow</option>
+                    <option value="facial">24K Gold Leaf Hydrafacial Ritual</option>
+                    <option value="hair">Keratin Silk Infusion & Balayage</option>
+                    <option value="package">Celestial Maharani VIP Package</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="bookingArtist" class="form-label">Stylist Preference</label>
+                  <select id="bookingArtist" class="form-select">
+                    <option value="rukmini">Rukmini (Senior Artist – 22+ Years Exp)</option>
+                    <option value="rashmi">Rashmi (Junior Artist – Certified 2 Years Exp)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="bookingDate" class="form-label">Preferred Date *</label>
+                  <input type="date" id="bookingDate" class="form-input" required>
+                </div>
+                <div class="form-group">
+                  <label for="bookingSlot" class="form-label">Preferred Time Slot *</label>
+                  <select id="bookingSlot" class="form-select">
+                    <option value="10:00 AM">10:00 AM – Morning Glow</option>
+                    <option value="01:00 PM">01:00 PM – Afternoon Elegance</option>
+                    <option value="04:00 PM">04:00 PM – Evening Glamour</option>
+                    <option value="06:30 PM">06:30 PM – Sunset Twilight Session</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingNotes" class="form-label">Special Requests / Wedding Details</label>
+                <textarea id="bookingNotes" class="form-textarea" rows="2" placeholder="Mention saree colors, skin sensitivities, or event timing..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold gold-shimmer" style="width: 100%; padding: 16px; font-size: 1.05rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.34 5L2 22l5.22-1.31C8.61 21.49 10.26 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/>
+                </svg>
+                Confirm via Official WhatsApp Concierge
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Live Summary Box -->
+          <div class="booking-summary-side">
+            <div>
+              <div class="section-tag" style="background:rgba(255,255,255,0.1);color:var(--gold-light);">Real-time Summary</div>
+              <h4>Reservation Overview</h4>
+
+              <div class="summary-items-list">
+                <div class="summary-item">
+                  <span class="summary-item-label">Selected Experience:</span>
+                  <span class="summary-item-val" id="summaryServiceName">Royal Bridal & Muhurtham Glow</span>
+                </div>
+                <div class="summary-item">
+                  <span class="summary-item-label">Estimated Duration:</span>
+                  <span class="summary-item-val" id="summaryDuration">3.5 Hours</span>
+                </div>
+                <div class="summary-item">
+                  <span class="summary-item-label">Lead Stylist:</span>
+                  <span class="summary-item-val" id="summaryArtist">Master Rukmini (Lead Artist)</span>
+                </div>
+                <div class="summary-item">
+                  <span class="summary-item-label">Private Chamber:</span>
+                  <span class="summary-item-val">Reserved & Sanitized</span>
+                </div>
+              </div>
+
+              <div class="summary-total-box">
+                <div>
+                  <span style="font-size:0.8rem;text-transform:uppercase;color:#CCC;">Consultation Status</span>
+                  <div class="summary-total-val" id="summaryTotal" style="font-size:1.15rem;color:var(--gold-light);">Complimentary Preview</div>
+                </div>
+                <span style="font-size:0.8rem;color:var(--gold-light);">Priority Concierge</span>
+              </div>
+            </div>
+
+            <div style="font-size:0.85rem;color:#AAA;line-height:1.5;">
+              🔒 <em>Nagashree Privacy Pledge: Your schedule, consultation photos, and booking information remain completely confidential and secure.</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VISIT STUDIO & CONTACT
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Sanctuary Address</div>
+          <h2 class="section-title">Visit <span class="text-gold-gradient">Nagashree Beauty Parlor</span></h2>
+          <p class="section-desc">Experience royal tranquility in our private boutique suites. Valet parking & direct private consultation by appointment.</p>
+        </div>
+
+        <div class="contact-cards-grid">
+          <!-- Card 1 -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="contact-card-title">Studio Address</h3>
+            <p class="contact-card-desc">
+              <strong>Nagashree Beauty Parlor</strong><br>
+              Opposite Royal Enclave, Main Heritage Boulevard,<br>
+              Karnataka, India.
+            </p>
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="contact-card-link text-gold">
+              Get Directions & Google Map →
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="contact-card-title">Studio Timings</h3>
+            <p class="contact-card-desc">
+              <strong>Monday – Saturday:</strong> 9:30 AM – 8:30 PM<br>
+              <strong>Sunday:</strong> 9:00 AM – 7:30 PM<br>
+              <em>Early Morning Bridal Bookings (4:00 AM onwards) available on advance notice.</em>
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3 class="contact-card-title">Direct Concierge</h3>
+            <p class="contact-card-desc">
+              <strong>Telephone:</strong> <a href="tel:+918722332337">+91 87223 32337</a><br>
+              <strong>WhatsApp:</strong> <a href="https://wa.me/918722332337" target="_blank" rel="noopener">+91 87223 32337</a><br>
+              <strong>Inquiries:</strong> appointments@nagashreebeauty.com
+            </p>
+            <a href="https://wa.me/918722332337" target="_blank" rel="noopener" class="contact-card-link text-gold">
+              Chat on WhatsApp Directly →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-link" style="margin-bottom: 14px;">
+            <img src="assets/logo.png" alt="Nagashree Logo" class="brand-logo-img" style="filter: brightness(1.2);">
+          </a>
+          <p>
+            Nagashree Beauty Parlor — rukmini's ode to haute bridal aesthetics, gold skin rejuvenation, and bespoke glamour for modern royalty.
+          </p>
+          <div style="display:flex;gap:12px;">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-icon btn-dark" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="btn btn-icon btn-dark" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="btn btn-icon btn-dark" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Signature Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Royal Bridal Makeover</a></li>
+            <li><a href="#services">24K Imperial Gold Facial</a></li>
+            <li><a href="#services">Keratin Hair Spa & Balayage</a></li>
+            <li><a href="#services">Haute Gel Nail Extensions</a></li>
+            <li><a href="#services">Pre-Bridal Body Polishing</a></li>
+            <li><a href="#services">Saree Silhouette Draping</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#transformation">Transformation Slider</a></li>
+            <li><a href="#lookbook">Bridal Portfolio Lookbook</a></li>
+            <li><a href="#packages">VIP Bridal Packages</a></li>
+            <li><a href="#testimonials">Client Testimonials</a></li>
+            <li><a href="#booking">Book VIP Appointment</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">VIP Concierge</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span><a href="tel:+918722332337" style="color:inherit;text-decoration:none;">Direct: +91 87223 32337</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>concierge@nagashreebeauty.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Karnataka, India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>Nagashree Beauty Parlor</strong> (Rukmini – The Art of Beauty). All Rights Reserved.
+        </div>
+        <div style="display:flex;gap:20px;">
+          <a href="#" style="color:#888;text-decoration:none;">Privacy Policy</a>
+          <a href="#" style="color:#888;text-decoration:none;">Terms of Artistry</a>
+          <a href="#" style="color:#888;text-decoration:none;">Sanitization Standards</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Direct WhatsApp Button -->
+  <a href="https://wa.me/918722332337?text=Hello%20Nagashree%20Beauty%20Parlor,%20I%20would%20like%20to%20inquire%20about%20a%20VIP%20Bridal%20Consultation." target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.165 8.165 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.89.87-.89 2.12 0 1.25.91 2.46 1.04 2.63.13.17 1.8 2.75 4.36 3.86.61.26 1.09.42 1.46.54.61.2 1.17.17 1.61.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/>
+    </svg>
+  </a>
+
+  <!-- Gallery Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">✕</button>
+      <img src="" alt="Enlarged Portfolio Detail" class="lightbox-img" id="lightboxImg">
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>

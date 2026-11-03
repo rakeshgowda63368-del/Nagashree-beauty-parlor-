@@ -873,13 +873,11 @@ main {
    ========================================================================== */
 .hero-tools-marquee-wrapper {
   margin-top: 56px;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(197, 155, 39, 0.35);
+  background: transparent;
+  border: none;
   border-radius: var(--radius-lg);
-  padding: 24px 28px 22px;
-  box-shadow: 0 16px 45px rgba(30, 15, 7, 0.07);
+  padding: 24px 0 0;
+  box-shadow: none;
   position: relative;
   overflow: hidden;
 }
@@ -928,7 +926,7 @@ main {
   background: #0E0704;
   border: 1px solid rgba(197, 155, 39, 0.45);
   box-shadow: 0 8px 25px rgba(14, 7, 4, 0.18);
-  margin-bottom: 14px;
+  margin-bottom: 0;
   mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
 }
@@ -1018,13 +1016,10 @@ main {
   color: var(--espresso-rich);
 }
 .chip-dot {
-  color: var(--gold-primary);
-  font-size: 0.75rem;
+  display: none;
 }
 .chip-detail {
-  font-size: 0.74rem;
-  color: var(--text-muted);
-  font-weight: 500;
+  display: none;
 }
 
 /* ==========================================================================
@@ -1412,17 +1407,20 @@ main {
 }
 .ba-badge {
   position: absolute;
-  bottom: 20px;
-  padding: 6px 18px;
-  background: rgba(14, 7, 4, 0.85);
+  bottom: 16px;
+  top: auto;
+  padding: 6px 16px;
+  background: rgba(14, 7, 4, 0.88);
   color: var(--gold-light);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   border-radius: var(--radius-pill);
   border: 1px solid var(--gold-border);
   z-index: 4;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.45);
 }
 .ba-badge-before {
   left: 20px;
@@ -1456,29 +1454,30 @@ main {
 }
 .story-floating-quote {
   position: absolute;
-  bottom: -30px;
-  right: -20px;
+  bottom: -20px;
+  right: -12px;
   background: #FFFFFF;
-  padding: 24px 30px;
+  padding: 14px 18px;
   border-radius: var(--radius-md);
-  border-left: 4px solid var(--gold-primary);
+  border-left: 3px solid var(--gold-primary);
   box-shadow: var(--shadow-md);
-  max-width: 320px;
+  max-width: 220px;
 }
 .story-floating-quote p {
   font-family: var(--font-serif-editorial);
   font-style: italic;
-  font-size: 1.15rem;
+  font-size: 0.82rem;
   color: var(--espresso-rich);
+  line-height: 1.5;
 }
 .story-floating-quote span {
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.62rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--gold-primary);
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .story-content h2 {
@@ -1558,10 +1557,69 @@ main {
 
 .artist-card-header {
   position: relative;
-  height: 380px;
+  height: 270px;
   overflow: hidden;
-  background: var(--espresso-gradient);
+  background: radial-gradient(circle at 50% 50%, #2A170F 0%, #150B06 65%, #0A0503 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(197, 155, 39, 0.25);
 }
+
+.artist-3d-scene {
+  position: relative;
+  width: 175px;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: float3DIcon 4.5s ease-in-out infinite alternate;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  z-index: 1;
+}
+
+.artist-card:hover .artist-3d-scene {
+  transform: translateY(-8px) scale(1.08) rotate(1.5deg);
+}
+
+.artist-3d-glow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.38) 0%, rgba(197, 155, 39, 0.12) 50%, transparent 72%);
+  filter: blur(12px);
+  pointer-events: none;
+  animation: pulse3DGlow 3.2s ease-in-out infinite alternate;
+}
+
+.artist-3d-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+@keyframes float3DIcon {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-7px) rotate(1.5deg);
+  }
+}
+
+@keyframes pulse3DGlow {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
 .artist-card-img {
   width: 100%;
   height: 100%;
@@ -1662,6 +1720,7 @@ main {
 }
 .btn-select-artist {
   flex: 1;
+  width: 100%;
   justify-content: center;
   white-space: nowrap;
 }
@@ -2278,8 +2337,8 @@ main {
   /* Mobile Continuous Moving Tools Carousel */
   .hero-tools-marquee-wrapper {
     margin-top: 24px;
-    padding: 16px 12px 14px;
-    border-radius: 16px;
+    padding: 0;
+    border-radius: 0;
   }
   .tools-marquee-header {
     margin-bottom: 10px;
@@ -2583,8 +2642,8 @@ main {
   /* Mobile Continuous Moving Tools Carousel */
   .hero-tools-marquee-wrapper {
     margin-top: 24px;
-    padding: 16px 12px 14px;
-    border-radius: 16px;
+    padding: 0;
+    border-radius: 0;
   }
   .tools-marquee-header {
     margin-bottom: 10px;
@@ -2764,8 +2823,17 @@ main {
   }
   .ba-badge {
     font-size: 0.65rem;
-    padding: 3px 8px;
-    top: 10px;
+    padding: 4px 10px;
+    bottom: 10px;
+    top: auto;
+    white-space: nowrap;
+    border-radius: var(--radius-pill);
+  }
+  .ba-badge-before {
+    left: 8px;
+  }
+  .ba-badge-after {
+    right: 8px;
   }
 
   /* Brand Story */
@@ -2802,6 +2870,33 @@ main {
   .story-stat-label {
     font-size: 0.68rem;
   }
+  .story-features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .story-feat-item {
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .story-feat-icon {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+  }
+  .story-feat-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+  .story-feat-text h4 {
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+    line-height: 1.35;
+  }
+  .story-feat-text p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
 
   /* Master Artists Section (Refined & Compact) */
   .about-section {
@@ -2816,7 +2911,15 @@ main {
     border-radius: 16px;
   }
   .artist-card-header {
-    height: 250px;
+    height: 220px;
+  }
+  .artist-3d-scene {
+    width: 145px;
+    height: 145px;
+  }
+  .artist-3d-glow {
+    width: 120px;
+    height: 120px;
   }
   .artist-role-badge {
     top: 10px;
@@ -3126,3 +3229,4 @@ main {
     font-size: 0.58rem;
   }
 }
+

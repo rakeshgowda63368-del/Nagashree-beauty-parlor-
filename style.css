@@ -2175,14 +2175,15 @@ main {
 .site-footer {
   background: var(--espresso-black);
   color: #FFFFFF;
-  padding: 80px 0 30px;
+  padding: 56px 0 24px;
   border-top: 2px solid var(--gold-primary);
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.3fr 0.9fr 0.9fr 1.1fr;
-  gap: 40px;
-  margin-bottom: 60px;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  margin-bottom: 32px;
+  align-items: start;
 }
 .footer-brand p {
   color: #BBB;
@@ -2229,6 +2230,17 @@ main {
   margin-top: 4px;
 }
 
+
+.dev-link {
+  color: var(--gold-light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+.dev-link:hover {
+  color: var(--gold-primary);
+  text-decoration: underline;
+}
 .footer-bottom {
   border-top: 1px solid rgba(197, 155, 39, 0.2);
   padding-top: 30px;
